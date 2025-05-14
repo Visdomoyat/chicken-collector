@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {%load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="logo-container">
+    <div class="chicken-container">
+        <img src="{% static 'images/chicken-in-a-box.png' %}" alt="A chicken in a box" />
+    </div>
+    <div class="logo-container">
+        <h1>Chicken Collector</h1>
+    </div>
+</section>
+
+{% endblock %}
