@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chicken Collector</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
     {% block head %}
     {% endblock %}
   </head>
@@ -12,7 +16,7 @@
     <header>
         <div class="header-logo-container">
           <a href="/">
-            <img src="" alt="The Chicken Collector Logo" />
+            <img src="{% static 'images/logo.png' %}" alt="The Chicken Collector Logo" />
           </a>
         </div>
         <nav>
